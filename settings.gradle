@@ -1,0 +1,5 @@
+include ':app'
+<<<<<<< HEAD
+rootProject.name = "03Isa"
+=======
+>>>>>>> 8589f362727c8e975a1a8ccfed13c44e86edcad8

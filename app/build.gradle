@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+<<<<<<< HEAD
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+=======
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+>>>>>>> 8589f362727c8e975a1a8ccfed13c44e86edcad8
+
+android {
+
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "ro.upt.ac.chiuitter"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+<<<<<<< HEAD
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+    def lifecycle_version = "2.0.0"
+    def room_version = "1.1.1"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    kapt "android.arch.persistence.room:compiler:$room_version"
+=======
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+
+    implementation 'com.google.android.material:material:1.0.0'
+>>>>>>> 8589f362727c8e975a1a8ccfed13c44e86edcad8
+}
